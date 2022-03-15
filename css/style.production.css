@@ -356,4 +356,10 @@ button:focus,
 .contact-information img {
     width: 30px;
     height: 30px;
+    padding: 5px;
+}
+
+.contact-information a {
+    padding: 5px;
+    margin-bottom: 5px;
 }
