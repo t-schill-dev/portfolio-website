@@ -184,13 +184,17 @@ button:focus {
 
 .about-section__header {
     text-align: center;
-    text-decoration: none;
 }
 
-.about-skills {}
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-.about-background {}
+.about-skills .skills-item {}
 
+.about-background,
 .about-interests {}
 
 section h1 {
@@ -281,49 +285,6 @@ button:focus,
     h1 {
         font-size: 30px;
     }
-}
-
-@keyframes color-change {
-    from {
-        fill: #edc655;
-    }
-    to {
-        fill: #f76414;
-    }
-}
-
-.sun {
-    animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-    from {
-        transform: translate(0, 50px);
-    }
-    to {
-        transform: translate(200px, 50px);
-    }
-}
-
-.cloud-front {
-    animation-duration: 10s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-}
-
-@keyframes cloud-move-reverse {
-    from {
-        transform: translate(446px, 48px);
-    }
-    to {
-        transform: translate(100px, 48px);
-    }
-}
-
-.cloud-back {
-    animation: 14s cloud-move-reverse infinite alternate linear;
 }
 
 .contact-page {
