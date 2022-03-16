@@ -127,7 +127,7 @@ a {
 }
 
 a:visited {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     opacity: 0.8;
 }
 

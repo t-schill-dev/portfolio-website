@@ -146,8 +146,8 @@ a {
 }
 
 a:visited {
-    color: var(--secondary-color);
-    opacity: 0.8;
+    color: var(--primary-color);
+    opacity: 0.5;
 }
 
 a:hover,
