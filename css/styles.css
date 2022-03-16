@@ -187,15 +187,16 @@ button:focus {
 }
 
 .about-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .about-skills .skills-item {}
 
 .about-background,
-.about-interests {}
+.about-interests {
+    max-width: 400px;
+}
 
 section h1 {
     text-align: center;
