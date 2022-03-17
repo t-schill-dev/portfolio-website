@@ -8,9 +8,10 @@ Neutral text: grey #5C6D7A
 */
 
 :root {
-    --primary-color: #16837D;
+    --primary-color: #316B83;
     --secondary-color: #83161C;
-    --dark-grey: #5C6D7A;
+    --dark-grey: #6D8299;
+    --box-background: #CEE5D0;
     --font-weight: 700;
     --reg-font-size: 16px;
     --bigger-text: 24px;
@@ -40,8 +41,13 @@ h2 {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: var(--font-weight);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 #page-heading {
@@ -182,24 +188,46 @@ button:focus {
 
 /*NEED TO EDIT below*/
 
-.about-section__header {
-    text-align: center;
-}
-
 .about-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    color: var(--dark-grey);
+    margin: 20px;
+    font-size: 18px;
 }
 
-.about-skills .skills-item {}
-
-.about-background,
-.about-interests {
-    max-width: 400px;
+.about-skills-item h3 {
+    text-align: justify;
 }
 
-section h1 {
+.about-skills__professional,
+.about-skills__personal {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: var(--box-background);
+}
+
+.about-skills-item {
+    height: 15rem;
+}
+
+.about-skills-item th {
+    padding: 2px 5px;
+    margin: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.about-skills-heading {
+    margin-left: 20px;
+    padding-left: 3px;
+    color: var(--secondary-color);
+}
+
+.download-section {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .project-grid {
@@ -261,6 +289,11 @@ button:focus,
         flex-wrap: nowrap;
         padding: 5px;
         margin: 5px;
+    }
+    .about-skills__professional,
+    .about-skills__personal {
+        flex-direction: column;
+        flex-shrink: 1;
     }
     .profile {
         display: flex;
