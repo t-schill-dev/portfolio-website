@@ -371,21 +371,30 @@ button:focus,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    max-width: 750px;
+    min-width: 80%;
+    padding: 10px;
 }
 
-.contact-input,
-.contact-information {
-    width: 23rem;
-    height: 13.5rem;
-    padding: 10px 30px;
-    border: solid 1px var(--secondary-color);
-    margin: 50px;
+.contact-input {
+    padding: 10px;
+    border: solid 1px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 350px;
+}
+
+.contact-input input,
+textarea,
+button {
+    max-width: 650px;
+    min-width: 100%;
+    margin-bottom: 10px;
 }
 
 .contact-information img {

@@ -324,8 +324,27 @@ button:focus,
 
 .contact-page {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    max-width: 750px;
+    min-width: 80%;
+    padding: 10px;
+}
+
+.contact-input {
+    padding: 10px;
+    border: solid 1px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 350px;
+}
+
+.contact-input input,
+textarea,
+button {
+    max-width: 650px;
+    min-width: 100%;
+    margin-bottom: 10px;
 }
 
 .contact-input,
@@ -337,7 +356,7 @@ button:focus,
     margin: 50px;
 }
 
-.contact-information img {
+*/ .contact-information img {
     width: 30px;
     height: 30px;
     padding: 5px;
