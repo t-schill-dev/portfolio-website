@@ -305,6 +305,9 @@ button:focus,
         margin: 0 20px;
         text-align: justify;
     }
+    .contact-page {
+        flex-direction: column;
+    }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -329,6 +332,7 @@ button:focus,
     max-width: 750px;
     min-width: 80%;
     padding: 10px;
+    margin: 20px 10px;
 }
 
 .contact-input {
@@ -337,6 +341,7 @@ button:focus,
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     width: 350px;
+    margin-top: 40px;
 }
 
 .contact-input input,
