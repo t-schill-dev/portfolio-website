@@ -64,7 +64,7 @@ Neutral text: grey #5C6D7A
     /* Allow items  to not grow but shrink */
     
     .page-header__item {
-        flex: 0 1 300px;
+        flex: 0 1 250px;
     }
     /* Only navigation bar should grow*/
     
