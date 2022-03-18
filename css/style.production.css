@@ -5,20 +5,10 @@
 * Browsers: last 2 version
 */
 
-
-/*
-Used colors:
-Background: ivory #FFFFF0
-Primary color: green #16837D
-Secondary(complementary): Red #83161C
-Neutral text: grey #5C6D7A
-
-*/
-
 :root {
     --primary-color: #316B83;
     --secondary-color: #83161C;
-    --dark-grey: ##435A60;
+    --dark-grey: #435A60;
     --box-background: #CEE5D0;
     --font-weight: 700;
     --reg-font-size: 16px;
