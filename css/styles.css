@@ -353,15 +353,6 @@ Neutral text: grey #5C6D7A
         margin-bottom: 10px;
     }
     
-    .contact-input,
-    .contact-information {
-        width: 23rem;
-        height: 13.5rem;
-        padding: 10px 30px;
-        border: solid 1px var(--secondary-color);
-        margin: 50px;
-    }
-    
     .contact-information img {
         width: 30px;
         height: 30px;
