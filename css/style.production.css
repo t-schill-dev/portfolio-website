@@ -200,6 +200,10 @@ button:focus {
     text-align: center;
 }
 
+.page-footer a {
+    text-decoration: none;
+}
+
 .about-section {
     color: var(--dark-grey);
     margin: 20px;
