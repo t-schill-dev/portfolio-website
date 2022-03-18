@@ -17,8 +17,8 @@ Neutral text: grey #5C6D7A
 
 :root {
     --primary-color: #316B83;
-    --secondary-color: #83161C;
-    --dark-grey: #6D8299;
+    --secondary-color: #874356;
+    --dark-grey: #556182;
     --box-background: #CEE5D0;
     --font-weight: 700;
     --reg-font-size: 16px;
@@ -209,10 +209,31 @@ button:focus {
     text-align: center;
 }
 
-
-/*NEED TO EDIT below*/
+.about-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-right: 20px;
+    padding: 3px;
+    color: var(--secondary-color);
+}
 
 .about-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     color: var(--dark-grey);
     margin: 20px;
     font-size: 18px;
@@ -230,10 +251,11 @@ button:focus {
     -ms-flex-pack: distribute;
     justify-content: space-around;
     margin: 10px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     background-color: var(--box-background);
+    width: 650px;
 }
 
 .about-skills-item {
@@ -244,12 +266,6 @@ button:focus {
     padding: 2px 5px;
     margin: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-.about-skills-heading {
-    margin-left: 20px;
-    padding-left: 3px;
-    color: var(--secondary-color);
 }
 
 .download-section {
