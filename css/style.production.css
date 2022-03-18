@@ -105,8 +105,8 @@ ul {
 
 /*hover effect menubar */
 
-.navigation-list li a::before,
-.navigation-list li a::after {
+.navigation-list__item::before,
+.navigation-list__item::after {
     position: absolute;
     left: 0px;
     width: 100%;
@@ -118,20 +118,20 @@ ul {
     transition: all 0.3s;
 }
 
-.navigation-list li a::before {
+.navigation-list__item::before {
     top: 0px;
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
 }
 
-.navigation-list li a::after {
+.navigation-list__item::after {
     bottom: 0px;
     -webkit-transform: translateY(10px);
     transform: translateY(10px);
 }
 
-.navigation-list li a:hover::before,
-.navigation-list li a:hover::after {
+.navigation-list__item:hover::before,
+.navigation-list__item:hover::after {
     opacity: 1;
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
