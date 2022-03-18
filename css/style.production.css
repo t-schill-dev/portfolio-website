@@ -18,7 +18,7 @@ Neutral text: grey #5C6D7A
 :root {
     --primary-color: #316B83;
     --secondary-color: #83161C;
-    --dark-grey: #6D8299;
+    --dark-grey: ##435A60;
     --box-background: #CEE5D0;
     --font-weight: 700;
     --reg-font-size: 16px;
@@ -210,9 +210,6 @@ button:focus {
     text-align: center;
 }
 
-
-/*NEED TO EDIT below*/
-
 .about-section {
     color: var(--dark-grey);
     margin: 20px;
@@ -304,6 +301,49 @@ button:focus,
     opacity: 0.8;
 }
 
+.contact-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 750px;
+    min-width: 80%;
+    padding: 10px;
+    margin: 20px 10px;
+}
+
+.contact-input {
+    padding: 10px;
+    border: solid 1px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 350px;
+    margin-top: 40px;
+}
+
+.contact-input input,
+textarea,
+button {
+    max-width: 650px;
+    min-width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact-information img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+.contact-information a {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
 @media all and (min-width: 350px) and (max-width: 500px) {
     .project-grid {
         -ms-grid-columns: 1fr;
@@ -386,47 +426,4 @@ button:focus,
     .project-grid {
         display: block;
     }
-}
-
-.contact-page {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    max-width: 750px;
-    min-width: 80%;
-    padding: 10px;
-    margin: 20px 10px;
-}
-
-.contact-input {
-    padding: 10px;
-    border: solid 1px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    width: 350px;
-    margin-top: 40px;
-}
-
-.contact-input input,
-textarea,
-button {
-    max-width: 650px;
-    min-width: 100%;
-    margin-bottom: 10px;
-}
-
-.contact-information img {
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-}
-
-.contact-information a {
-    padding: 5px;
-    margin-bottom: 5px;
 }
