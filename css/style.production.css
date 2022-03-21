@@ -213,8 +213,9 @@ button:focus {
 .about-professional-skills h2,
 .about-personal-skills h2 {
     display: block;
-    width: 750px;
-    margin-left: 20px;
+    text-align: center;
+    width: auto;
+    margin-left: 10px;
 }
 
 .about-skills-item {
@@ -224,7 +225,7 @@ button:focus {
     border-radius: 5px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     background-color: var(--box-background);
-    width: 350px;
+    width: 320px;
     height: 220px;
 }
 
@@ -318,14 +319,14 @@ button:focus,
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        max-width: 320px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        max-width: auto;
     }
     .profile {
         display: -webkit-box;
@@ -361,10 +362,13 @@ button:focus,
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 }
 
-@media all and (min-width: 750px) and (max-width: 1500px) {
+@media all and (min-width: 750px) and (max-width: 1350px) {
     .project-grid {
         grid-gap: 10px;
     }
@@ -379,10 +383,13 @@ button:focus,
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 }
 
-@media all and (min-width: 1500px) {
+@media all and (min-width: 1350px) {
     .about-section {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
