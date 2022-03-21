@@ -59,8 +59,8 @@ ul {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    padding: 5px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 
@@ -68,8 +68,8 @@ ul {
 
 .page-header__item {
     -webkit-box-flex: 0;
-    -ms-flex: 0 1 250px;
-    flex: 0 1 250px;
+    -ms-flex: 0 1 100px;
+    flex: 0 1 100px;
 }
 
 
@@ -88,8 +88,7 @@ ul {
 .navigation-list li {
     list-style-type: none;
     display: inline-block;
-    margin-left: 15px;
-    padding: 10px 10px;
+    padding: 0px 5px;
     font-size: var(--bigger-text);
     font-weight: var(--font-weight);
 }
@@ -105,8 +104,8 @@ ul {
 
 /*hover effect menubar */
 
-.navigation-list__item::before,
-.navigation-list__item::after {
+.navigation-list li a::before,
+.navigation-list li a::after {
     position: absolute;
     left: 0px;
     width: 100%;
@@ -118,20 +117,20 @@ ul {
     transition: all 0.3s;
 }
 
-.navigation-list__item::before {
+.navigation-list li a::before {
     top: 0px;
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
 }
 
-.navigation-list__item::after {
+.navigation-list li a::after {
     bottom: 0px;
     -webkit-transform: translateY(10px);
     transform: translateY(10px);
 }
 
-.navigation-list__item:hover::before,
-.navigation-list__item:hover::after {
+.navigation-list li a:hover::before,
+.navigation-list li a:hover::after {
     opacity: 1;
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
@@ -283,49 +282,6 @@ button:focus,
     opacity: 0.8;
 }
 
-.contact-page {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    max-width: 750px;
-    min-width: 80%;
-    padding: 10px;
-    margin: 20px 10px;
-}
-
-.contact-input {
-    padding: 10px;
-    border: solid 1px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    width: 350px;
-    margin-top: 40px;
-}
-
-.contact-input input,
-textarea,
-button {
-    max-width: 650px;
-    min-width: 100%;
-    margin-bottom: 10px;
-}
-
-.contact-information img {
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-}
-
-.contact-information a {
-    padding: 5px;
-    margin-bottom: 5px;
-}
-
 @media all and (min-width: 350px) and (max-width: 500px) {
     .project-grid {
         -ms-grid-columns: 1fr;
@@ -343,10 +299,18 @@ button {
         -ms-flex-direction: column;
         flex-direction: column;
     }
+    .navigation-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
     .navigation-list__item {
         font-size: 20px;
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         padding: 5px;
         margin: 5px;
     }
@@ -367,19 +331,20 @@ button {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        text-align: center;
-    }
-    .profile__portrait {
-        margin: 0 20px;
-        text-align: justify;
-    }
-    .contact-page {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .profile__portrait {
+        margin: 0 20px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 }
 
@@ -426,17 +391,34 @@ button {
     }
 }
 
-@supports (display: grid) {
-    .project-grid {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+.contact-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
-@supports not (display: grid) {
-    .project-grid {
-        display: block;
-    }
+.contact-input,
+.contact-information {
+    width: 23rem;
+    height: 13.5rem;
+    padding: 10px 30px;
+    border: solid 1px var(--secondary-color);
+    margin: 50px;
+}
+
+.contact-information img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+.contact-information a {
+    padding: 5px;
+    margin-bottom: 5px;
 }
