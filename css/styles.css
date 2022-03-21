@@ -260,13 +260,16 @@ button:focus,
     align-items: center;
 }
 
-.contact-input,
-.contact-information {
+.contact-information,
+.contact-input {
     width: 23rem;
-    height: 15rem;
-    padding: 10px 30px;
-    border: solid 1px var(--secondary-color);
+    height: 16rem;
+    padding: 15px;
     margin: 50px;
+}
+
+.contact-input {
+    border: solid 1px var(--secondary-color);
 }
 
 .contact-information img {
@@ -278,6 +281,17 @@ button:focus,
 .contact-information a {
     padding: 5px;
     margin-bottom: 5px;
+}
+
+input {
+    width: 300px;
+    height: 1.5em;
+}
+
+textarea,
+.submit-button {
+    width: 300px;
+    height: 3em;
 }
 
 @media all and (min-width: 350px) and (max-width: 500px) {
@@ -317,6 +331,9 @@ button:focus,
         margin: 0 20px;
         justify-content: center;
     }
+    .contact-page {
+        flex-direction: column;
+    }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -327,6 +344,9 @@ button:focus,
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .contact-page {
+        flex-direction: column;
     }
 }
 
