@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>About Timon Schill</title>
 </head>
 
@@ -21,7 +21,7 @@
                         <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
                     </li>
                     <li role="presentation">
-                        <a href="new-about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About</a>
+                        <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About</a>
                     </li>
                     <li role="presentation">
                         <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Projects</a>
@@ -38,14 +38,9 @@
     <main>
         <h1 id="page-heading">About</h1>
 
-        <div class="about-heading">
-            <h2>Personal skills</h2>
-            <h2>Professional skills</h2>
-        </div>
         <div class="about-section">
-
-            <div class="about-skills__personal">
-
+            <div class="about-personal-skills">
+                <h2>Personal skills</h2>
                 <div class="about-skills-item">
                     <h3>I am ...</h3>
                     <ul role="presentation">
@@ -63,75 +58,79 @@
                         <li>... playing music</li>
                         <li>... photographing weddings</li>
                     </ul>
-
                 </div>
-
             </div>
-
-            <div class="about-skills__professional">
-
+            <div class="about-professional-skills">
+                <h2>Professional skills</h2>
 
                 <!--Language skills-->
-                <div>
-                    <table class="about-skills-item">
-                        <tr>
-                            <th scope="col">Languages</th>
-                            <th scope="col">Years</th>
-                            <th scope="col">Level of experience</th>
-                        </tr>
-                        <tr>
-                            <td>HTML</td>
-                            <td>1</td>
-                            <td>Intermediate</td>
-                        </tr>
-                        <tr>
-                            <td>CSS</td>
-                            <td>1</td>
-                            <td>Beginner</td>
-                        </tr>
-                        <tr>
-                            <td>JavaScript</td>
-                            <td>1</td>
-                            <td>Beginner</td>
-                        </tr>
+                <table class="about-skills-item">
+                    <tr>
+                        <th scope="col">Languages</th>
+                        <th scope="col">Years</th>
+                        <th scope="col">Level of experience</th>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>1</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>1</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>1</td>
+                        <td>Beginner</td>
+                    </tr>
 
-                    </table>
-                </div>
-                <!--Framework skills-->
-                <div>
-                    <table class="about-skills-item">
-                        <tr>
-                            <th scope="col">Frameworks</th>
-                            <th scope="col">Years</th>
-                            <th scope="row">Level of experience</th>
-                        </tr>
-                        <tr>
-                            <td>React</td>
-                            <td>1</td>
-                            <td>Beginner</td>
-                        </tr>
-                        <tr>
-                            <td>##</td>
-                            <td>#</td>
-                            <td>Beginner</td>
-                        </tr>
-                        <tr>
-                            <td>##</td>
-                            <td>3</td>
-                            <td>Beginner</td>
-                        </tr>
+                </table>
 
-                    </table>
-                </div>
+                <table class="about-skills-item">
+                    <tr>
+                        <th scope="col">Frameworks</th>
+                        <th scope="col">Years</th>
+                        <th scope="row">Level of experience</th>
+                    </tr>
+                    <tr>
+                        <td>React</td>
+                        <td>1</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>##</td>
+                        <td>#</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>##</td>
+                        <td>3</td>
+                        <td>Beginner</td>
+                    </tr>
 
+                </table>
             </div>
+            <!--
+                <div class="about-skills__personal">
+
+                </div>
+
+                <div class="about-skills__professional">
+
+                </div>
+               -->
+
+
         </div>
 
-        <section class="download-section">
+
+        <div class="download-section">
             <p>More infos about my professional background</p>
             <!--needs file-->
             <a href="files/cv.pdf" class="button" download>Download my CV</a>
-        </section>
+        </div>
     </main>
     <script src="js/tota11y.min.js"></script>
 </body>

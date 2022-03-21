@@ -185,42 +185,30 @@ button:focus {
     text-align: center;
 }
 
-.about-heading {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-right: 20px;
-    padding: 3px;
-    color: var(--secondary-color);
-}
-
 .about-section {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     color: var(--dark-grey);
-    margin: 20px;
+    margin: 10px;
     font-size: 18px;
 }
 
-.about-skills-item h3 {
-    text-align: justify;
-}
-
-.about-skills__professional,
-.about-skills__personal {
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    background-color: var(--box-background);
-    width: 650px;
+.about-professional-skills h2,
+.about-personal-skills h2 {
+    display: block;
+    width: 750px;
+    margin-left: 20px;
 }
 
 .about-skills-item {
-    height: 15rem;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: var(--box-background);
+    width: 350px;
+    height: 220px;
 }
 
 .about-skills-item th {
@@ -245,9 +233,6 @@ button:focus {
     padding: 20px;
     background-color: lightgray;
 }
-
-
-/*About Page*/
 
 .button,
 button {
@@ -294,10 +279,11 @@ button:focus,
         padding: 5px;
         margin: 5px;
     }
-    .about-skills__professional,
-    .about-skills__personal {
+    .about-section {
+        display: flex;
+        justify-content: center;
         flex-direction: column;
-        flex-shrink: 1;
+        max-width: 320px;
     }
     .profile {
         display: flex;
@@ -314,14 +300,28 @@ button:focus,
     .project-grid {
         grid-template-columns: 1fr 1fr;
     }
+    .about-section {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-@media all and (min-width: 750px) {
+@media all and (min-width: 750px) and (max-width: 1500px) {
     .project-grid {
         grid-gap: 10px;
     }
     h1 {
         font-size: 30px;
+    }
+    .about-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media all and (min-width: 1500px) {
+    .about-section {
+        flex-direction: row;
     }
 }
 
