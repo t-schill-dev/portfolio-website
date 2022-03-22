@@ -326,12 +326,12 @@ textarea,
     .profile {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
         text-align: center;
     }
     .profile__portrait {
         margin: 0 20px;
-        justify-content: center;
+        align-items: center;
     }
     .contact-page {
         flex-direction: column;
