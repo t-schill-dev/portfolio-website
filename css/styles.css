@@ -176,6 +176,10 @@ button:focus {
     text-align: center;
 }
 
+.page-footer a {
+    text-decoration: none;
+}
+
 .about-section {
     display: flex;
     justify-content: space-around;
