@@ -265,9 +265,10 @@ button:focus,
 
 .contact-information,
 .contact-input {
-    width: 380px;
-    padding: 15px 15px;
-    margin: 50px;
+    width: 360px;
+    padding: 15px;
+    margin: 40px;
+    text-align: center;
 }
 
 .contact-input {
