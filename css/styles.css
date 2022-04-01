@@ -275,6 +275,15 @@ button:focus,
     border: solid 1px var(--secondary-color);
 }
 
+.input-wrapper {
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+}
+
 .contact-information img {
     width: 30px;
     height: 30px;

@@ -47,12 +47,18 @@
         </div>
         <div class="contact-input">
             <form action="/form-action" method="post" id="contact-form">
-                <label for="contact-email" class="standard-label">Email*: </label><br>
-                <input type="email" id="contact-email" required> <br>
-                <label for="contact-number" class="standard-label">Phone: </label><br>
-                <input type="tel" id="contact-number"> <br>
-                <label for="message" class="standard-label"> Message*: (max 240)</label> <br>
-                <textarea id="message" name="message" placeholder="Leave a message here" maxlength="240" required></textarea> <br>
+                <div class="input-wrapper">
+                    <label for="contact-email" class="standard-label">Email*: </label><br>
+                    <input type="email" id="contact-email" required> <br>
+                </div>
+                <div class="input-wrapper">
+                    <label for="contact-number" class="standard-label">Phone: </label><br>
+                    <input type="tel" id="contact-number"> <br>
+                </div>
+                <div class="input-wrapper">
+                    <label for="message" class="standard-label"> Message*: (max 240)</label> <br>
+                    <textarea id="message" name="message" placeholder="Leave a message here" maxlength="240" required></textarea> <br>
+                </div>
                 <button type="submit" class="submit-button" value="send message">Submit</button>
             </form>
         </div>
@@ -70,4 +76,5 @@
         </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
