@@ -230,6 +230,12 @@ button:focus {
     background-color: lightgray;
 }
 
+.project-img {
+    width: 75%;
+    height: 35%;
+    justify-content: center;
+}
+
 .button,
 button {
     /* overwrites browser defaults and resets the border */
