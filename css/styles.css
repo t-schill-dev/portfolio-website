@@ -1,11 +1,12 @@
 :root {
-    --primary-color: #316B83;
+    --primary-color: #7D9D9C;
     --secondary-color: #874356;
     --dark-grey: #556182;
-    --box-background: #CEE5D0;
+    --box-background: #576F72;
     --font-weight: 700;
+    --light-font: #E4DCCF;
     --reg-font-size: 16px;
-    --bigger-text: 24px;
+    --bigger-text: 20px;
 }
 
 * {
@@ -13,15 +14,15 @@
 }
 
 body {
-    background-color: #FFFFF0;
+    background-color: var(--primary-color);
     font-family: 'Lato', sans-serif;
     font-size: var(--reg-font-size);
     line-height: 1.6;
-    color: var(--dark-grey);
+    color: var(--light-font);
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: var(--font-weight);
     font-variant: small-caps;
 }
@@ -36,21 +37,32 @@ h3 {
     font-weight: var(--font-weight);
 }
 
+p {
+    font-size: 18px;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
 }
 
+li {
+    margin-left: 20px;
+}
+
 #page-heading {
     text-align: center;
     margin: 30px;
+    background-color: #A27B5C;
+    box-shadow: 4px 2px 5px 0px rgba(51, 51, 51, 0.61)
 }
 
 .page-header {
     display: flex;
     width: 100%;
     padding: 10px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px 0px rgba(51, 51, 51, 0.61);
+    background-color: #F0EBE3;
 }
 
 
@@ -138,19 +150,29 @@ a:active {
     color: #0d4744;
 }
 
-button {
-    background-color: var(--primary-color);
-    color: white;
-    font-size: var(--reg-font-size);
-    padding: 0.6rem;
-    border-radius: 3px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+.button {
+    box-shadow: 1px 1px 3px 1px #91b8b3;
+    background-color: #151a19;
+    border-radius: 5px;
+    border: 1px solid #566963;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 11px 23px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #2b665e;
 }
 
-button:hover,
-button:focus {
-    cursor: pointer;
-    opacity: 0.8;
+.button:hover {
+    background-color: #384040;
+}
+
+.button:active {
+    position: relative;
+    top: 3px;
+    left: 3px;
 }
 
 .profile {
@@ -163,10 +185,16 @@ button:focus {
     width: 250px;
     margin-right: 40px;
     border-radius: 50%;
+    box-shadow: 4px 2px 5px 0px rgba(51, 51, 51, 0.61);
 }
 
 .introduction-text {
-    padding-top: 5px;
+    padding-top: 0px;
+}
+
+.special-font {
+    background-color: black;
+    font-family: 'Menlo', sans-serif;
 }
 
 .page-footer {
@@ -182,34 +210,43 @@ button:focus {
 
 .about-section {
     display: flex;
-    justify-content: space-around;
-    color: var(--dark-grey);
+    /* justify-content: center; */
+    color: var(--light-font);
     margin: 10px;
+    padding-left: 10px;
     font-size: 18px;
+}
+
+.about-professional,
+.about-personal {
+    height: 100vh;
+    margin-left: 20px;
 }
 
 .about-professional-skills h2,
 .about-personal-skills h2 {
     display: block;
-    text-align: center;
+    text-align: left;
     width: auto;
-    margin-left: 10px;
+    padding: 2px 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .about-skills-item {
     display: inline-block;
+    justify-content: space-around;
     margin: 10px;
-    padding: 10px;
+    padding-left: 5px;
     border-radius: 5px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     background-color: var(--box-background);
-    width: 320px;
-    height: 220px;
+    width: 280px;
+    height: 250px;
 }
 
-.about-skills-item th {
+.about-skills-item h3 {
     padding: 2px 5px;
-    margin: 20px;
+    margin: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
@@ -236,49 +273,24 @@ button:focus {
     justify-content: center;
 }
 
-.button,
-button {
-    /* overwrites browser defaults and resets the border */
-    border: none;
-    display: inline-block;
-    /* takes the font from the outer container */
-    font-family: inherit;
-    /* styles the button */
-    background-color: var(--primary-color);
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-    /* width of the border, type, color */
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    transition: 0.3s opacity;
-}
-
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
-    cursor: pointer;
-    /* reduces the opacity of the button to 80% */
-    opacity: 0.8;
-}
-
 .contact-page {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.contact-information,
-.contact-input {
-    width: 360px;
-    padding: 15px;
-    margin: 40px;
+.contact-text {
     text-align: center;
 }
 
 .contact-input {
-    border: solid 1px var(--secondary-color);
+    width: 70%;
+    padding: 15px;
+    margin: 10px;
+    text-align: left;
+    color: var(--light-font);
+    font-size: var(--bigger-text);
+    box-shadow: 0px 0px 3px 2px rgba(135, 67, 86, 0.61)
 }
 
 .input-wrapper {
@@ -288,17 +300,6 @@ button:focus,
 .error-message {
     color: red;
     font-size: 0.8rem;
-}
-
-.contact-information img {
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-}
-
-.contact-information a {
-    padding: 5px;
-    margin-bottom: 5px;
 }
 
 input {

@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>Contact Timon Schill</title>
 </head>
@@ -35,35 +35,32 @@
         </div>
 
     </header>
-    <h1 id="page-heading">Let's connect</h1>
-    <div class="contact-page">
-        <div class="contact-information">
-            Timon Schill <br> Fenitzerstrasse 29 <br> 90489 Nuremberg <br> - Germany - <br>
+    <main>
+        <h1 id="page-heading">Let's connect</h1>
+        <div class="contact-page">
+            <p class="contact-text">I can see that you liked what you saw, otherwise you would not be here. <br>So leave me a message or connect on LinkedIn.
+            </p>
 
-            <img src="img/contact_image/telephone_icon.svg" alt="phone number">
-            <a href="tel:+4917684496342">+49 176 84496342</a><br>
-            <img src="img/contact_image/email_icon.svg" alt="email">
-            <a href="mailto:timonschill@googlemail.com ">timonschill(at)googlemail(dot)com</a><br>
+
+            <div class="contact-input">
+                <form action="/form-action" method="post" id="contact-form">
+                    <div class="input-wrapper">
+                        <label for="contact-email" class="standard-label">Email*: </label><br>
+                        <input type="email" id="contact-email" required> <br>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="contact-number" class="standard-label">Phone: </label><br>
+                        <input type="tel" id="contact-number"> <br>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="message" class="standard-label"> Message*: (max 240)</label> <br>
+                        <textarea id="message" name="message" placeholder="Leave a message here" maxlength="240" required></textarea> <br>
+                    </div>
+                    <button type="submit" class="button submit-button" value="send message">Submit</button>
+                </form>
+            </div>
         </div>
-        <div class="contact-input">
-            <form action="/form-action" method="post" id="contact-form">
-                <div class="input-wrapper">
-                    <label for="contact-email" class="standard-label">Email*: </label><br>
-                    <input type="email" id="contact-email" required> <br>
-                </div>
-                <div class="input-wrapper">
-                    <label for="contact-number" class="standard-label">Phone: </label><br>
-                    <input type="tel" id="contact-number"> <br>
-                </div>
-                <div class="input-wrapper">
-                    <label for="message" class="standard-label"> Message*: (max 240)</label> <br>
-                    <textarea id="message" name="message" placeholder="Leave a message here" maxlength="240" required></textarea> <br>
-                </div>
-                <button type="submit" class="submit-button" value="send message">Submit</button>
-            </form>
-        </div>
-    </div>
-    <br><br><br>
+    </main>
     <footer class="page-footer">
         <h2>Find me on</h2>
         <div class="social-media">
