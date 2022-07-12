@@ -5,6 +5,7 @@
     --box-background: #576F72;
     --font-weight: 700;
     --light-font: #E4DCCF;
+    --dark-font: #151a19;
     --reg-font-size: 16px;
     --bigger-text: 20px;
 }
@@ -287,9 +288,10 @@ a:active {
     width: 70%;
     padding: 15px;
     margin: 10px;
+    background-color: var(--light-font);
     text-align: left;
-    color: var(--light-font);
-    font-size: var(--bigger-text);
+    color: var(--dark-font);
+    font-family: 'Lato', sans-serif;
     box-shadow: 0px 0px 3px 2px rgba(135, 67, 86, 0.61)
 }
 

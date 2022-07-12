@@ -43,14 +43,18 @@
 
 
             <div class="contact-input">
-                <form action="/form-action" method="post" id="contact-form">
+                <form action="https://getform.io/f/{da22357f-0eeb-4ac3-bcda-52a08d060e9a}" method="post" id="contact-form">
+                    <div class="input-wrapper">
+                        <label for="name" class="standard-label">Name*: </label><br>
+                        <input type="text" name='name' id="name" required> <br>
+                    </div>
                     <div class="input-wrapper">
                         <label for="contact-email" class="standard-label">Email*: </label><br>
-                        <input type="email" id="contact-email" required> <br>
+                        <input type="email" name='email' id="contact-email" required> <br>
                     </div>
                     <div class="input-wrapper">
                         <label for="contact-number" class="standard-label">Phone: </label><br>
-                        <input type="tel" id="contact-number"> <br>
+                        <input type="tel" name='number' id="contact-number"> <br>
                     </div>
                     <div class="input-wrapper">
                         <label for="message" class="standard-label"> Message*: (max 240)</label> <br>

@@ -45,6 +45,7 @@
         e.preventDefault();
         if (validateForm()) {
             alert("Thank you for submitting your contact information. I will get in touch!");
+            location.reload(true);
         }
     })
 
