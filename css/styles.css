@@ -2,7 +2,7 @@
     --primary-color: #7D9D9C;
     --secondary-color: #874356;
     --dark-grey: #556182;
-    --box-background: #576F72;
+    --box-background: #556182;
     --font-weight: 700;
     --light-font: #E4DCCF;
     --dark-font: #151a19;
@@ -209,6 +209,12 @@ a:active {
     text-decoration: none;
 }
 
+
+/**
+*Styling for about page
+---------------------------------------------------------
+*/
+
 .about-section {
     display: flex;
     /* justify-content: center; */
@@ -256,23 +262,60 @@ a:active {
     margin-bottom: 20px;
 }
 
-.project-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
-    margin: 30px 30px;
-}
 
-.grid__item {
-    padding: 20px;
-    background-color: lightgray;
-}
+/**
+*Styling for portfolio page
+---------------------------------------------------------
+*/
 
-.project-img {
-    width: 75%;
-    height: 35%;
+.project-page {
+    display: flex;
     justify-content: center;
 }
+
+.project-card {
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    height: 100vh;
+    width: 80%;
+}
+
+.left-box,
+.right-box {
+    height: 400px;
+    width: 50%;
+    padding: 10px;
+    margin-right: 3px;
+    box-shadow: 2px 2px 5px -1px rgba(51, 51, 51, 0.61);
+    align-items: center;
+}
+
+.project-title {
+    height: 10%;
+    background-color: var(--secondary-color);
+}
+
+.project-description {
+    height: 70%;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 10%;
+}
+
+.project-tech-wrapper {
+    display: flex;
+    width: auto;
+}
+
+
+/**
+*Styling for contact page
+---------------------------------------------------------
+*/
 
 .contact-page {
     display: flex;
@@ -316,9 +359,12 @@ textarea,
 }
 
 @media all and (min-width: 350px) and (max-width: 500px) {
-    .project-grid {
+    /**
+    * TODO apply new class and properties
+    */
+    /* .project-grid {
         grid-template-columns: 1fr;
-    }
+    } */
     h2 {
         font-size: 20px;
     }
@@ -358,9 +404,12 @@ textarea,
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
-    .project-grid {
+    /**
+    * TODO apply new class and properties
+    */
+    /* .project-grid {
         grid-template-columns: 1fr 1fr;
-    }
+    } */
     .about-section {
         display: flex;
         flex-direction: column;
@@ -372,9 +421,12 @@ textarea,
 }
 
 @media all and (min-width: 750px) and (max-width: 1350px) {
-    .project-grid {
+    /**
+    * TODO apply new class and properties
+    */
+    /* .project-grid {
         grid-gap: 10px;
-    }
+    } */
     h1 {
         font-size: 30px;
     }
