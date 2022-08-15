@@ -37,7 +37,7 @@
             .'Content-type: text/html; charset=utf-8' . "\r\n"
             .'From: ' . $visitor_email . "\r\n";
               
-            if(mail($recipient, $email_title, $email_body, $headers)) {
+            if(mail($recipient, $email_body, $headers)) {
                 echo "<p>Thank you for your message, $visitor_name. I will get back to you as soon as possible.</p>";
             } else {
                 echo '<p>Sorry but the email did not go through :( </p>';
