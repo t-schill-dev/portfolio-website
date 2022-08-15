@@ -43,22 +43,18 @@
 
 
             <div class="contact-input">
-                <form action="https://getform.io/f/{da22357f-0eeb-4ac3-bcda-52a08d060e9a}" method="post" id="contact-form">
+                <form action="form-to-email.php" method="post" id="contact-form">
                     <div class="input-wrapper">
                         <label for="name" class="standard-label">Name*: </label><br>
-                        <input type="text" name='name' id="name" required> <br>
+                        <input type="text" name='visitor_name' id="name" required> <br>
                     </div>
                     <div class="input-wrapper">
                         <label for="contact-email" class="standard-label">Email*: </label><br>
-                        <input type="email" name='email' id="contact-email" required> <br>
-                    </div>
-                    <div class="input-wrapper">
-                        <label for="contact-number" class="standard-label">Phone: </label><br>
-                        <input type="tel" name='number' id="contact-number"> <br>
+                        <input type="email" name='visitor_email' id="contact-email" required> <br>
                     </div>
                     <div class="input-wrapper">
                         <label for="message" class="standard-label"> Message*: (max 240)</label> <br>
-                        <textarea id="message" name="message" placeholder="Leave a message here" maxlength="240" required></textarea> <br>
+                        <textarea id="message" name="visitor_message" placeholder="Leave a message here" maxlength="240" required></textarea> <br>
                     </div>
                     <button type="submit" class="button submit-button" value="send message">Submit</button>
                 </form>
