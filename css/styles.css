@@ -284,17 +284,16 @@ a:active {
     display: flex;
     align-items: center;
     height: 80vh;
-    width: 90%;
+    width: 80%;
 }
 
 .left-box,
 .right-box {
-    height: 450px;
+    height: 380px;
     width: 50%;
     padding: 5px;
     margin-right: 3px;
     box-shadow: 2px 2px 5px -1px var(--primary-color);
-    /* background-color: var(--primary-color); */
     align-items: center;
     border-radius: 5px;
     display: flex;
@@ -336,8 +335,12 @@ a:active {
 
 .project-img {
     width: 100%;
-    height: 450px;
-    object-fit: contain;
+    height: 360px;
+    object-fit: fill;
+}
+
+.double {
+    height: 50%;
 }
 
 .other-project-container {
