@@ -23,12 +23,6 @@ body {
     color: var(--light-font);
 }
 
-h1 {
-    font-size: 40px;
-    font-weight: var(--font-weight);
-    font-variant: small-caps;
-}
-
 h2 {
     font-size: 24px;
     font-weight: var(--font-weight);
@@ -227,7 +221,7 @@ a:active {
 
 .about-section {
     display: flex;
-    /* justify-content: center; */
+    flex-direction: column;
     color: var(--light-font);
     margin: 10px;
     padding-left: 10px;
