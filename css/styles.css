@@ -1,4 +1,5 @@
 :root {
+    --background-color: #3D3C42;
     --primary-color: #7D9D9C;
     --secondary-color: #874356;
     --dark-grey: #556182;
@@ -15,7 +16,7 @@
 }
 
 body {
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     font-family: 'Lato', sans-serif;
     font-size: var(--reg-font-size);
     line-height: 1.6;
@@ -39,7 +40,7 @@ h3 {
 }
 
 p {
-    font-size: 18px;
+    font-size: var(--reg-font-size);
 }
 
 ul {
@@ -194,7 +195,7 @@ a:active {
 }
 
 .special-font {
-    background-color: black;
+    background-color: var(--primary-color);
     font-family: 'Menlo', sans-serif;
 }
 
@@ -207,6 +208,11 @@ a:active {
 
 .page-footer a {
     text-decoration: none;
+}
+
+.social-media-icon {
+    height: 25px;
+    width: 25px;
 }
 
 
@@ -276,7 +282,8 @@ a:active {
 .project-card {
     margin: 1rem 0 1rem 0;
     display: flex;
-    height: 100vh;
+    align-items: center;
+    height: 80vh;
     width: 80%;
 }
 
@@ -284,15 +291,18 @@ a:active {
 .right-box {
     height: 400px;
     width: 50%;
-    padding: 10px;
+    padding: 5px;
     margin-right: 3px;
     box-shadow: 2px 2px 5px -1px rgba(51, 51, 51, 0.61);
+    background-color: var(--primary-color);
     align-items: center;
+    border-radius: 5px;
 }
 
 .project-title {
-    height: 10%;
     background-color: var(--secondary-color);
+    margin: 0;
+    padding: 5px 0 5px 5px;
 }
 
 .project-description {
@@ -302,13 +312,20 @@ a:active {
 .icon-wrapper {
     display: flex;
     align-items: center;
-    position: relative;
-    height: 10%;
+    justify-content: space-between;
+    height: 5%;
+    margin-bottom: 10px;
+}
+
+.project-icon {
+    height: 24px;
+    width: 24px;
 }
 
 .project-tech-wrapper {
     display: flex;
-    width: auto;
+    height: 1rem;
+    align-items: center;
 }
 
 
