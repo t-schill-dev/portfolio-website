@@ -295,7 +295,7 @@ a:active {
 
 .left-box,
 .right-box {
-    height: 400px;
+    height: 450px;
     width: 50%;
     padding: 5px;
     margin-right: 3px;
@@ -303,24 +303,28 @@ a:active {
     /* background-color: var(--primary-color); */
     align-items: center;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-title {
     background-color: var(--secondary-color);
     margin: 0;
     padding: 5px 0 5px 5px;
+    width: 100%;
 }
 
 .project-description {
-    height: 70%;
-    padding: 10px;
+    padding: 0 10px 0 10px;
 }
 
 .icon-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 5%;
+    height: 10%;
+    width: 100%;
     margin-bottom: 10px;
 }
 
@@ -340,8 +344,8 @@ a:active {
 
 .project-img {
     width: 100%;
-    height: 400px;
-    object-fit: fill
+    height: 450px;
+    object-fit: contain;
 }
 
 
