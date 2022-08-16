@@ -1,3 +1,31 @@
+/*
+Adding bottom border of active page
+*/
+const home = document.querySelector('.home-tab');
+const about = document.querySelector('.about-tab');
+const portfolio = document.querySelector('.projects-tab')
+const contact = document.querySelector('.contact-tab');
+
+const activePage = window.location.href;
+const pathname = new URL(activePage).pathname
+
+// Matching pathname
+switch (pathname) {
+    case '/index.html':
+        home.classList.add('current');
+        break;
+    case '/about.html':
+        about.classList.add('current');
+        break;
+    case '/portfolio.html':
+        portfolio.classList.add('current');
+        break;
+
+    case '/contact.html':
+        contact.classList.add('current');
+        break;
+}
+
 (function() {
     //Form Validation
     let form = document.querySelector('#contact-form');

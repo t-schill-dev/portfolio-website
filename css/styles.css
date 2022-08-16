@@ -91,12 +91,15 @@ li {
     font-weight: var(--font-weight);
 }
 
-.navigation-list__item--active {
-    text-decoration: none;
-}
-
 .navigation-list__item {
     position: relative;
+}
+
+
+/* Javascript adds class to items when selected */
+
+.current {
+    border-bottom: 2px solid var(--primary-color);
 }
 
 
