@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="page-header">
-            <img class="page-header__item" src="img/logo-icon.svg" alt="logo">
+            <img class="page-header__item" src="img/icons/logo-icon.svg" alt="logo">
             <nav class="main-navigation page-header__item">
                 <ul role="menubar" class="navigation-list">
                     <li role="presentation">
@@ -35,77 +35,98 @@
 
     </header>
 
-    <main>
+    <main class="about-page">
+
         <div class="about-section">
 
-            <div class="about-professional">
-                <section class="about-professional-skills">
-                    <h2>Professionally</h2>
-                    <article>Focused on Frontend Development, I developed beautiful applications using React, for instance, as a frontend framework and developed the backend using Node.js<br/> The following list demonstrates the technology I used for my projects
+            <div class="about-personal">
+
+
+                <div class="personal">
+                    <article class="self-intro">
+                        <h2>Hi everyone! </h2>
+                        <p>My name is Timon. I am a professional Fullstack developer based in Nuremberg, Germany. But really what do borders mean... <br> I am passionate about people and development which is why I chose my previous career in Sales and Consulting.
+                            I still do enjoy "selling" myself for the better cause. On the other hand I want to be developing solutions together, rather than alone. In my research Software Developement is a great way to achieve that<br> So in 2022, I
+                            found the great opportunity to learn the essence of Fullstack Software Developement in a 6 months programm with Career Foundry. During this time I developed 6+ hands-on <span><a href="portfolio.html">projects</a> </span> and
+                            am hungry for more in my professional career!
+
+                        </p>
                     </article>
-                    <!--Language skills-->
-                    <div class="about-skills-item">
-                        <h3>Frontend</h3>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>React.js</li>
-                            <li>Bootstrap</li>
-                        </ul>
-
-                    </div>
-
-                    <div class="about-skills-item">
-                        <h3>Backend</h3>
-                        <ul>
-                            <li>Node/Express.js</li>
-                            <li>Mongoose</li>
-                            <li>MongoDB</li>
-                            <li>RestAPI</li>
-                            <li>AWS Lambda</li>
-                        </ul>
-                    </div>
-                    <div class="about-skills-item">
-                        <h3>Concepts</h3>
-                        <ul>
-                            <li>SCRUM</li>
-                            <li>Object Oriented Programming</li>
-                            <li>CI/CD</li>
-                            <li>Test/Beharvioral-Driven-Development</li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </section>
-                <div class="download-section">
-                    <p>More infos about my professional background</p>
-                    <!--needs file-->
-                    <a href="files/cv.pdf" class="button">Download my CV</a>
+                    <section class="about-personal-skills">
+                        <div class="about-skills-item">
+                            <h3>I am ...</h3>
+                            <ul role="presentation">
+                                <li>... a proud husband
+                                    <li>... a father of two boys</li>
+                                    <li>... an experimental cook</li>
+                                    <li>... a travel adventurer</li>
+                            </ul>
+                        </div>
+                        <div class="about-skills-item">
+                            <h3>I like ...</h3>
+                            <ul role="presentation">
+                                <li>... basketball</li>
+                                <li>... hiking</li>
+                                <li>... playing music</li>
+                                <li>... photographing weddings</li>
+                            </ul>
+                        </div>
+                    </section>
                 </div>
             </div>
+            <div class="about-professional">
 
-            <div class="about-personal">
-                <section class="about-personal-skills">
-                    <h2>Personal</h2>
-                    <div class="about-skills-item">
-                        <h3>I am ...</h3>
-                        <ul role="presentation">
-                            <li>... a proud husband
-                                <li>... a father of two boys</li>
-                                <li>... an experimental cook</li>
-                                <li>... a travel adventurer</li>
-                        </ul>
-                    </div>
-                    <div class="about-skills-item">
-                        <h3>I like ...</h3>
-                        <ul role="presentation">
-                            <li>... basketball</li>
-                            <li>... hiking</li>
-                            <li>... playing music</li>
-                            <li>... photographing weddings</li>
-                        </ul>
-                    </div>
-                </section>
+                <div class="professional">
+
+                    <article class="professional-intro">
+                        <h2>Professionally</h2>
+                        <p>Focused on Frontend Development, I developed beautiful applications using React, for instance, as a frontend framework and developed the backend using Node.js<br/> The following list demonstrates the technology I used for my projects
+                        </p>
+                    </article>
+                    <section class="about-professional-skills">
+                        <div class="about-skills-item">
+                            <h3>Frontend</h3>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>React.js</li>
+                                <li>Angular</li>
+                                <li>Bootstrap</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="about-skills-item">
+                            <h3>Backend</h3>
+                            <ul>
+                                <li>Node/Express.js</li>
+                                <li>Mongoose</li>
+                                <li>MongoDB</li>
+                                <li>RestAPI</li>
+                                <li>AWS Lambda</li>
+                            </ul>
+                        </div>
+                        <div class="about-skills-item">
+                            <h3>Concepts</h3>
+                            <ul>
+                                <li>SCRUM</li>
+                                <li>Object Oriented Programming</li>
+                                <li>CI/CD</li>
+                                <li>Test/Beharvioral-Driven-Development</li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="download-section">
+                <p>More infos about my professional background</p>
+                <!--needs file-->
+                <div class="button-wrapper">
+                    <a href="files/cv.pdf" class="button download-button"><img src="img/icons/country-icon/de.svg" alt="German flag"> CV</a>
+                    <a href="files/cv.pdf" class="button download-button"><img src="img/icons/country-icon/us.svg" alt="German flag"> CV</a>
+                </div>
             </div>
         </div>
     </main>
@@ -113,10 +134,10 @@
         <h2>Find me on</h2>
         <div class="social-media">
             <a href="https://www.github.com/t-schill-dev" target="_blank">
-                <img class="social-media-icon" src="img/github_bright_icon.svg" alt="GitHub">
+                <img class="social-media-icon" src="img/icons/github_bright_icon.svg" alt="GitHub">
             </a>
             <a href="https://www.linkedin.com/in/timon-schill/" target="_blank">
-                <img class="social-media-icon" src="img/linkedin_icon.svg" alt="LinkedIn">
+                <img class="social-media-icon" src="img/icons/linkedin_icon.svg" alt="LinkedIn">
             </a>
         </div>
     </footer>
