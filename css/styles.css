@@ -280,10 +280,9 @@ a:active {
 }
 
 .project-card {
-    margin: 1rem 0 1rem 0;
+    margin: 2rem 0 2rem 0;
     display: flex;
     align-items: center;
-    height: 80vh;
     width: 80%;
 }
 
