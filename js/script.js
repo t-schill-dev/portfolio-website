@@ -8,8 +8,8 @@ const contact = document.querySelector('.contact-tab');
 
 const activePage = window.location.href;
 const pathname = new URL(activePage).pathname
-
-// Matching pathname
+console.log('path', pathname)
+    // Matching pathname
 switch (pathname) {
     case '/index.html':
         home.classList.add('current');
