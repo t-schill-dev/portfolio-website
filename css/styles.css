@@ -46,15 +46,9 @@ li {
     margin-left: 20px;
 }
 
-#page-heading {
-    text-align: center;
-    margin: 30px;
-    background-color: #A27B5C;
-    box-shadow: 4px 2px 5px 0px rgba(51, 51, 51, 0.61)
-}
-
 .page-header {
     display: flex;
+    width: 100vw;
     align-items: center;
     justify-content: space-between;
     padding-right: 10px;
@@ -227,12 +221,12 @@ a:active {
     flex-direction: column;
     justify-content: space-evenly;
     color: var(--light-font);
+    width: 100vw;
 }
 
 .about-personal,
 .about-professional {
     display: flex;
-    /* margin-top: 150px; */
     justify-content: space-evenly;
     padding: 10px;
 }
@@ -251,7 +245,8 @@ a:active {
 .about-picture__portrait,
 .about-picture__professional {
     object-fit: contain;
-    max-width: 600px;
+    max-height: 700px;
+    margin-top: 50px;
 }
 
 .about-personal-skills,
@@ -277,7 +272,7 @@ a:active {
     border-radius: 5px;
     box-shadow: 2px 2px 5px -1px var(--primary-color);
     min-width: 250px;
-    height: 350px;
+    height: 300px;
 }
 
 .about-skills-item h3 {
@@ -459,7 +454,7 @@ textarea,
     height: 3em;
 }
 
-@media all and (min-width: 300px) and (max-width: 750px) {
+@media all and (min-width: 300px) and (max-width: 850px) {
     h1 {
         font-size: 30px;
     }
@@ -468,19 +463,18 @@ textarea,
     }
     body {
         font-size: 1rem;
+        width: 100vw!important;
     }
     .page-header {
-        width: 100vw;
-        padding-right: 3px
+        padding-right: 3px;
     }
     .page-header>img {
         visibility: hidden;
         position: absolute;
     }
     .page-header__item:last-child {
-        flex: 1;
         text-align: center;
-        justify-content: left;
+        justify-content: space-evenly;
     }
     .navigation-list__item {
         font-size: 70%;
@@ -489,10 +483,12 @@ textarea,
     .contact-input {
         width: 350px;
     }
+    /* About page styling */
     .about-page {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
     .about-professional,
     .about-personal {
@@ -505,13 +501,18 @@ textarea,
     .about-professional-skills {
         flex-direction: column;
     }
+    /* Hiding picture */
     .about-picture__professional {
         visibility: hidden;
         position: absolute;
     }
+    .about-picture__portrait {
+        height: 500px;
+        object-fit: contain;
+    }
     .self-intro,
     .professional-intro {
-        width: 80%;
+        width: 90%;
         margin: 10px;
     }
     /* Portfolio styling */
@@ -547,29 +548,43 @@ textarea,
     }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+
+/* @media all and (min-width: 500px) and (max-width: 850px) {
     .navigation-list__item {
         font-size: 90%;
     }
-}
+} */
 
-@media all and (min-width: 750px) and (max-width: 1500px) {
+@media all and (min-width: 850px) and (max-width: 1500px) {
     h1 {
         font-size: 30px;
+    }
+    .page-header {
+        width: 100vw;
+        padding-right: 3px
+    }
+    .page-header__item:last-child {
+        flex: 1;
+    }
+    .self-intro,
+    .professional-intro {
+        width: 80%;
+        margin: 10px;
     }
     .about-professional,
     .about-personal {
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        margin: 0;
     }
     .about-picture__professional {
         position: absolute;
         visibility: hidden;
     }
-    .self-intro,
-    .professional-intro {
-        width: 90%;
+    .about-picture__portrait {
+        max-height: 600px;
+        object-fit: contain;
     }
     /* Portfolio page */
     .project-img {
