@@ -232,7 +232,6 @@ a:active {
 .about-personal,
 .about-professional {
     display: flex;
-    /* margin-top: 150px; */
     justify-content: space-evenly;
     padding: 10px;
 }
@@ -251,7 +250,8 @@ a:active {
 .about-picture__portrait,
 .about-picture__professional {
     object-fit: contain;
-    max-width: 600px;
+    max-height: 700px;
+    margin-top: 50px;
 }
 
 .about-personal-skills,
@@ -277,7 +277,7 @@ a:active {
     border-radius: 5px;
     box-shadow: 2px 2px 5px -1px var(--primary-color);
     min-width: 250px;
-    height: 350px;
+    height: 300px;
 }
 
 .about-skills-item h3 {
@@ -559,18 +559,20 @@ textarea,
     }
     .about-professional,
     .about-personal {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
     .about-picture__professional {
         position: absolute;
         visibility: hidden;
     }
-    .self-intro,
-    .professional-intro {
-        width: 90%;
+    .about-picture__portrait {
+        height: 500px;
+        object-fit: cover;
     }
+    /* .self-intro,
+    .professional-intro {
+        width: 50%;
+    } */
     /* Portfolio page */
     .project-img {
         object-fit: fill;
