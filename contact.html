@@ -8,7 +8,7 @@
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>Connect with Me</title>
 </head>
@@ -37,13 +37,8 @@
 
     </header>
     <main>
-        <div class="contact-page">
-            <h2>Let's connect!</h2>
-            <p class="contact-text">I can see that you liked what you saw, otherwise you would not be here. <br>So leave me a message or connect on LinkedIn.
-            </p>
-
-
-            <div class="contact-input">
+        <!-- Disabled contact form -->
+        <!-- <div class="contact-input">
                 <form action="form-to-email.php" method="post" id="contact-form">
                     <div class="input-wrapper">
                         <label for="name" class="standard-label">Name*: </label><br>
@@ -59,19 +54,40 @@
                     </div>
                     <button type="submit" class="button submit-button" value="send message">Submit</button>
                 </form>
+            </div> -->
+        <div class="contact-page">
+
+            <head>
+                <h1>GET IN TOUCH!</h1>
+                <hr>
+            </head>
+            <div class="contact-wrapper">
+                <div class="contact-text">
+                    <p>I would love to connect with you! <br> Here is how you can start the conversation with me:
+                    </p>
+                </div>
+                <div class="contact-options">
+
+                    <div class="email-wrapper">
+                        <a href="mailto:tschilldev@gmail.com" target="_blank">
+                            <img class="social-media-icon" src="img/contact_image/email_icon.svg" alt="Contact via email">
+                        </a>
+                        <label for="email">Good old fashion email</label>
+
+                    </div>
+                    <div class="linkedin-wrapper">
+                        <a href="https://www.linkedin.com/in/timon-schill/" target="_blank">
+                            <img class="social-media-icon" src="img/contact_image/linkedin_icon_square.svg" alt="LinkedIn">
+                        </a>
+                        <label for="linkedin">Become part of my network</label>
+
+                    </div>
+                </div>
             </div>
         </div>
     </main>
     <footer class="page-footer">
-        <h2>Find me on</h2>
-        <div class="social-media">
-            <a href="https://www.github.com/t-schill-dev" target="_blank">
-                <img class="social-media-icon" src="img/icons/github_bright_icon.svg" alt="GitHub">
-            </a>
-            <a href="https://www.linkedin.com/in/timon-schill/" target="_blank">
-                <img class="social-media-icon" src="img/icons/linkedin_icon.svg" alt="LinkedIn">
-            </a>
-        </div>
+
     </footer>
 
 

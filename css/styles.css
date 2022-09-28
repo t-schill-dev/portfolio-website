@@ -415,14 +415,53 @@ a:active {
 .contact-page {
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    align-items: center;
+}
+
+hr {
+    width: 10%;
+    border: 2px solid var(--primary-color);
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
+}
+
+.contact-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    margin: 50px;
+    width: 350px;
+    height: 150px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px -1px var(--primary-color);
+}
+
+.email-wrapper,
+.linkedin-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .contact-text {
     text-align: center;
+    padding: 15px;
+    width: 70%;
+    font-size: 22px;
 }
+
+
+/* ! Contact form Out of use */
+
+
+/* 
 
 .contact-input {
     width: 500px;
@@ -446,13 +485,13 @@ a:active {
 input {
     width: 100%;
     height: 1.5em;
-}
+} */
 
-textarea,
-.submit-button {
-    width: 100%;
+
+/* .submit-button {
+    width: 30em;
     height: 3em;
-}
+} */
 
 @media all and (min-width: 300px) and (max-width: 850px) {
     h1 {
