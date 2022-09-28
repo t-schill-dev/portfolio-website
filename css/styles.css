@@ -532,6 +532,9 @@ textarea,
     .double {
         object-fit: cover;
     }
+    .other-project-container {
+        flex-direction: column;
+    }
     /* Home page styling */
     .profile {
         display: flex;
