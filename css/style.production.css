@@ -534,18 +534,76 @@ a:active {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    height: 70vh;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+hr {
+    width: 10%;
+    border: 2px solid var(--primary-color);
+}
+
+.contact-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    margin-top: 40px;
+}
+
+.contact-options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 18px;
+    margin: 50px;
+    width: 350px;
+    height: 150px;
+    padding: 15px;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 2px 5px -1px var(--primary-color);
+    box-shadow: 2px 2px 5px -1px var(--primary-color);
+}
+
+.email-wrapper,
+.linkedin-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .contact-text {
     text-align: center;
+    padding: 15px;
+    width: 70%;
+    font-size: 22px;
 }
+
+
+/* ! Contact form Out of use */
+
+
+/* 
 
 .contact-input {
     width: 500px;
@@ -554,7 +612,6 @@ a:active {
     text-align: left;
     color: var(--light-font);
     font-family: 'Lato', sans-serif;
-    -webkit-box-shadow: 2px 2px 5px -1px var(--primary-color);
     box-shadow: 2px 2px 5px -1px var(--primary-color);
 }
 
@@ -570,13 +627,13 @@ a:active {
 input {
     width: 100%;
     height: 1.5em;
-}
+} */
 
-textarea,
-.submit-button {
-    width: 100%;
+
+/* .submit-button {
+    width: 30em;
     height: 3em;
-}
+} */
 
 @media all and (min-width: 300px) and (max-width: 850px) {
     h1 {
@@ -621,6 +678,9 @@ textarea,
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
     .about-professional,
     .about-personal {
@@ -679,6 +739,12 @@ textarea,
     .double {
         -o-object-fit: cover;
         object-fit: cover;
+    }
+    .other-project-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
     /* Home page styling */
     .profile {
@@ -756,6 +822,10 @@ textarea,
         -o-object-fit: contain;
         object-fit: contain;
     }
+    /* .self-intro,
+    .professional-intro {
+        width: 50%;
+    } */
     /* Portfolio page */
     .project-img {
         -o-object-fit: fill;
