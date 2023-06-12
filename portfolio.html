@@ -1,233 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/icons/favicon-32x32.png" sizes="32x32" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/icons/favicon-32x32.png"
+      sizes="32x32"
+    />
     <script src="js/script.js"></script>
     <!--Reset CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <!--Font Lato-->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
     <title>Portfolio Projects</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="page-header">
-            <img class="page-header__item" src="img/icons/logo-icon.svg" alt="logo">
-            <nav class="main-navigation page-header__item">
-                <ul role="menubar" class="navigation-list">
-                    <li class='home-tab' role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-                    </li>
-                    <li class='about-tab' role="presentation">
-                        <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About</a>
-                    </li>
-                    <li class='projects-tab' role="presentation">
-                        <a href="portfolio.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Projects</a>
-                    </li>
-                    <li class='contact-tab' role="presentation">
-                        <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
+      <div class="page-header">
+        <img
+          class="page-header__item"
+          src="img/icons/logo-icon.svg"
+          alt="logo"
+        />
+        <nav class="main-navigation page-header__item">
+          <ul role="menubar" class="navigation-list">
+            <li class="home-tab" role="presentation">
+              <a
+                href="index.html"
+                role="menuitem"
+                class="navigation-list__item navigation-list__item--active"
+                >Home</a
+              >
+            </li>
+            <li class="about-tab" role="presentation">
+              <a
+                href="about.html"
+                role="menuitem"
+                class="navigation-list__item navigation-list__item--active"
+                >About</a
+              >
+            </li>
+            <li class="projects-tab" role="presentation">
+              <a
+                href="portfolio.html"
+                role="menuitem"
+                class="navigation-list__item navigation-list__item--active"
+                >Projects</a
+              >
+            </li>
+            <li class="contact-tab" role="presentation">
+              <a
+                href="contact.html"
+                role="menuitem"
+                class="navigation-list__item navigation-list__item--active"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-        <section class="project-page">
-
-            <!-- Project 1 -->
-            <div class="project-card">
-                <div class="left-box text-box">
-                    <h2 class="project-title">Web-Flix-App - React</h2>
-                    <div class="project-description">
-                        <p>This is the client-side interface for a movie app based on a server-side API and a database. The interface is built with React and Bootstrap. <br> Users are able to sign up and login, update their personal information, and create
-                            a list of their favorite movies. Additionally user can select search criterea to find movies accordingly <br> In order to communicate smoothly between different pages, the state-management of Redux is utilized.
-                        </p>
-                    </div>
-                    <div class="icon-wrapper">
-                        <div class="project-tech-wrapper">
-                            <img class='project-icon' src="img/portfolio img/tech_icons/react_bright_icon.svg" title='react' alt="React">
-                            <img class='project-icon' src="img/portfolio img/tech_icons/bootstrap_bright.svg" alt="React Bootstrap icon">
-                            <img class='project-icon' src="img/portfolio img/tech_icons/redux_icon_bright.svg" alt="Redux icon">
-                            <img src="" alt="">
-                        </div>
-                        <div class="link-icon-wrapper">
-                            <a href="https://github.com/t-schill-dev/web-flix-app-client" target="_blank">
-                                <img class='project-icon' src="img/icons/github_bright_icon.svg" alt="link to github repository">
-                            </a>
-                            <a href="https://webflix-movies-react.netlify.app/" target="_blank">
-                                <img class='project-icon' src="img/icons/share_bright_icon.svg" alt="open live app">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="right-box">
-                    <img class="project-img double" src="img/portfolio img/screenshot_react_movie_app_login.jpg" alt="Login View">
-                    <img class="project-img double" src="img/portfolio img/screenshot_react_movie_app.jpg" alt="Open app with movie overview">
-
-                </div>
+      <section class="project-page">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="left-box text-box">
+            <h2 class="project-title">Web-Flix-App - React</h2>
+            <div class="project-description">
+              <p>
+                This is the client-side interface for a movie app based on a
+                server-side API and a database. The interface is built with
+                React and Bootstrap. <br />
+                Users are able to sign up and login, update their personal
+                information, and create a list of their favorite movies.
+                Additionally user can select search criterea to find movies
+                accordingly <br />
+                In order to communicate smoothly between different pages, the
+                state-management of Redux is utilized.
+              </p>
             </div>
-            <!-- Project 2 -->
-            <div class="project-card">
-                <div class="left-box">
-                    <img class="project-img" src="img/portfolio img/rest_api.png" alt="Rest api architechture">
-                </div>
-                <div class="right-box text-box">
-
-                    <h2 class="project-title">Movie App (REST API) </h2>
-                    <p class="project-description">
-                        Server-side application built with Node.js and its framework Express.js. The API sends responses with information about different movies from its database <b>MongoDB</b> to the client. The connection between the server and the
-                        database is implemented using mongoose. <br>
-                        <b>Functionality</b> <br> In order to access the data, users have to create a profile and log in. To ensure data security, an authentication and authorization process is established using JWT Token. Only encrypted passwords (hashed)
-                        are stored in the database providing extra protection.
-                    </p>
-                    <div class="icon-wrapper">
-                        <div class="project-tech-wrapper">
-                            <img class='project-icon' src="img/portfolio img/tech_icons/javascript_icon.png" alt="javascript icon">
-                            <img class='project-icon' src="img/portfolio img/tech_icons/node_icon.png" alt="node.js icon">
-                            <img class='project-icon' src="img/portfolio img/tech_icons/mongodb_bright_icon.svg" alt="Mongodb icon">
-                            <img class='project-icon' src="img//portfolio img/tech_icons/heroku_icon.svg" alt="Heroku service icon">
-                        </div>
-                        <div class="link-icon-wrapper">
-                            <a href="https://github.com/t-schill-dev/web-flix-app" target="_blank">
-                                <img class='project-icon' src="img/icons/github_bright_icon.svg" alt="link to github repository">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="icon-wrapper">
+              <div class="project-tech-wrapper">
+                <img
+                  class="project-icon"
+                  src="img/portfolio img/tech_icons/react_bright_icon.svg"
+                  title="react"
+                  alt="React"
+                />
+                <img
+                  class="project-icon"
+                  src="img/portfolio img/tech_icons/bootstrap_bright.svg"
+                  alt="React Bootstrap icon"
+                />
+                <img
+                  class="project-icon"
+                  src="img/portfolio img/tech_icons/redux_icon_bright.svg"
+                  alt="Redux icon"
+                />
+                <img src="" alt="" />
+              </div>
+              <div class="link-icon-wrapper">
+                <a
+                  href="https://github.com/t-schill-dev/web-flix-app-client"
+                  target="_blank"
+                >
+                  <img
+                    class="project-icon"
+                    src="img/icons/github_bright_icon.svg"
+                    alt="link to github repository"
+                  />
+                </a>
+                <a
+                  href="https://webflix-movies-react.netlify.app"
+                  target="_blank"
+                >
+                  <img
+                    class="project-icon"
+                    src="img/icons/share_bright_icon.svg"
+                    alt="open live app"
+                  />
+                </a>
+              </div>
             </div>
-            <!-- Project 3 -->
-            <div class="project-card">
-                <div class="left-box text-box">
-                    <h2 class="project-title">Web-Flix-App - Angular</h2>
-                    <div class="project-description">
-                        <p>This is the client-side interface for the movie app based on server-side REST API and database. The interface is built with Angular, Angular Material Library and Typescript. <br> Users are able to sign up and login, update their
-                            personal information, and create a list of their favorite movies. <br>
-                        </p>
-                    </div>
-                    <div class="icon-wrapper">
-                        <div class="project-tech-wrapper">
-                            <img class='project-icon' src="img/portfolio img/tech_icons/angular_icon.png" alt="Angular icon">
-                            <img class='project-icon' src="img/portfolio img/tech_icons/typescript_bright_icon.svg" alt="Typescript Icon">
-                            <img class='project-icon' src="img/portfolio img/tech_icons/redux_icon_bright.svg" alt="Redux icon">
-                            <img src="" alt="">
-                        </div>
-                        <div class="link-icon-wrapper">
-                            <a href="https://github.com/t-schill-dev/web-flix-angular-client" target="_blank">
-                                <img class='project-icon' src="img/icons/github_bright_icon.svg" alt="link to github repository">
-                            </a>
-                            <a href="https://t-schill-dev.github.io/web-flix-angular-client/" target="_blank">
-                                <img class='project-icon' src="img/icons/share_bright_icon.svg" alt="open live app">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="right-box">
-                    <img class="project-img double" src="img/portfolio img/Screenshot_angular_movie_app_login.jpg" alt="Login view">
-                    <img class="project-img double" src="img/portfolio img/screenshot_angular_movie_app.jpg" alt="Screenshot of movie app in movie overview">
-                </div>
+          </div>
+          <div class="right-box">
+            <img
+              class="project-img double"
+              src="img/portfolio img/screenshot_react_movie_app_login.jpg"
+              alt="Login View"
+            />
+            <img
+              class="project-img double"
+              src="img/portfolio img/screenshot_react_movie_app.jpg"
+              alt="Open app with movie overview"
+            />
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="left-box">
+            <img
+              class="project-img"
+              src="img/portfolio img/rest_api.png"
+              alt="Rest api architechture"
+            />
+          </div>
+          <div class="right-box text-box">
+            <h2 class="project-title">Movie App (REST API)</h2>
+            <p class="project-description">
+              Server-side application built with Node.js and its framework
+              Express.js. The API sends responses with information about
+              different movies from its database <b>MongoDB</b> to the client.
+              The connection between the server and the database is implemented
+              using mongoose. <br />
+              <b>Functionality</b> <br />
+              In order to access the data, users have to create a profile and
+              log in. To ensure data security, an authentication and
+              authorization process is established using JWT Token. Only
+              encrypted passwords (hashed) are stored in the database providing
+              extra protection.
+            </p>
+            <div class="icon-wrapper">
+              <div class="project-tech-wrapper">
+                <img
+                  class="project-icon"
+                  src="img/portfolio img/tech_icons/javascript_icon.png"
+                  alt="javascript icon"
+                />
+                <img
+                  class="project-icon"
+                  src="img/portfolio img/tech_icons/node_icon.png"
+                  alt="node.js icon"
+                />
+                <img
+                  class="project-icon"
+                  src="img/portfolio img/tech_icons/mongodb_bright_icon.svg"
+                  alt="Mongodb icon"
+                />
+                <img
+                  class="project-icon"
+                  src="img//portfolio img/tech_icons/heroku_icon.svg"
+                  alt="Heroku service icon"
+                />
+              </div>
+              <div class="link-icon-wrapper">
+                <a
+                  href="https://github.com/t-schill-dev/web-flix-app"
+                  target="_blank"
+                >
+                  <img
+                    class="project-icon"
+                    src="img/icons/github_bright_icon.svg"
+                    alt="link to github repository"
+                  />
+                </a>
+              </div>
             </div>
-            <!-- Project 4 -->
-
-            <div class="project-card">
-                <div class="left-box">
-                    <img class="project-img" src="img/portfolio img/screenshot_meet_app.jpg" alt="Screenshot meet app">
-                </div>
-                <div class="right-box text-box">
-
-                    <h2 class="project-title">Meet App</h2>
-                    <p class="project-description">
-                        This is a serverless, progressive web application (PWA) built with React using a test-driven development (TDD) approach with Jest, cucumber and puppeteer. This means every unit and relation between pages are tested before developed.<br>                        The application uses AWS Lambda to generate a uniquie token to access the Google Calendar API to fetch upcoming events. For data visualization, the library Recharts displays data dynamically in a pie- and a scatter-chart.
-                    </p>
-                    <div class="icon-wrapper">
-                        <div class="project-tech-wrapper">
-                            <img class='project-icon' src="img/portfolio img/tech_icons/react_bright_icon.svg" alt="React icon">
-                            <img class='project-icon' src="img/portfolio img/tech_icons/jest_icon.svg" alt="Jest icon">
-                            <img class='project-icon' src="img/portfolio img/tech_icons/cucumber_icon.svg" alt="Jest cucumber icon">
-                            <img class='project-icon' src="img/portfolio img/tech_icons/aws_bright_icon.svg" alt="AWS icon">
-                        </div>
-                        <div class="link-icon-wrapper">
-                            <a href="https://github.com/t-schill-dev/meet-app" target="_blank">
-                                <img class='project-icon' src="img/icons/github_bright_icon.svg" alt="link to github repository">
-                            </a>
-                            <a href="https://t-schill-dev.github.io/meet-app/" target="_blank">
-                                <img class='project-icon' src="img/icons/share_bright_icon.svg" alt="open live app">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="left-box text-box">
+            <h2 class="project-title">Web-Flix-App - Angular</h2>
+            <div class="project-description">
+              <p>
+                This is the client-side interface for the movie app based on
+                server-side REST API and database. The interface is built with
+                Angular, Angular Material Library and Typescript. <br />
+                Users are able to sign up and login, update their personal
+                information, and create a list of their favorite movies. <br />
+              </p>
             </div>
-            <!-- Further projects -->
-            <section>
-                <h2>Other projects</h2>
-                <div class="other-project-container">
-                    <div class="other-project-box">
-                        <h3 class="project-title">Chat app</h3>
-                        <p>This chat app was developed with React Native and the Gifted Chat library. The app allows create a profile, select color settings, send text, pictures and geo location</p>
-                        <div class="icon-wrapper">
-                            <div class="project-tech-wrapper">
+            <div class="icon-wrapper">
+              <div class="project-tech-wrapper">
+                <img
+                  class="project-icon"
+                  src="img/portfolio img/tech_icons/angular_icon.png"
+                  alt="Angular icon"
+                />
+                <img
+                  class="project-icon"
+                  src="img/portfolio img/tech_icons/typescript_bright_icon.svg"
+                  alt="Typescript Icon"
+                />
+                <img
+                  class="project-icon"
+                  src="img/portfolio img/tech_icons/redux_icon_bright.svg"
+                  alt="Redux icon"
+                />
+                <img src="" alt="" />
+              </div>
+              <div class="link-icon-wrapper">
+                <a
+                  href="https://github.com/t-schill-dev/web-flix-angular-client"
+                  target="_blank"
+                >
+                  <img
+                    class="project-icon"
+                    src="img/icons/github_bright_icon.svg"
+                    alt="link to github repository"
+                  />
+                </a>
+                <a
+                  href="https://webflix-movies-angular.netlify.app"
+                  target="_blank"
+                >
+                  <img
+                    class="project-icon"
+                    src="img/icons/share_bright_icon.svg"
+                    alt="open live app"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="right-box">
+            <img
+              class="project-img double"
+              src="img/portfolio img/Screenshot_angular_movie_app_login.jpg"
+              alt="Login view"
+            />
+            <img
+              class="project-img double"
+              src="img/portfolio img/screenshot_angular_movie_app.jpg"
+              alt="Screenshot of movie app in movie overview"
+            />
+          </div>
+        </div>
+        <!-- Project 4 -->
 
-                                <img class='project-icon' src="img/portfolio img/tech_icons/react_bright_icon.svg" alt="React native icon">
-                            </div>
-                            <div class="link-icon-wrapper">
-                                <a href="https://github.com/t-schill-dev/chat-app" target="_blank">
-                                    <img class='project-icon' src="img/icons/github_bright_icon.svg" alt="link to github repository">
-                                </a>
-                                <a href="img/portfolio img/Screenshot_chat_app.png" alt='Pokedex project screnshot' target="_blank">
-                                    <img class='project-icon' target="_blank" src="img/icons/image_icon.svg" alt="open screenshot">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="other-project-box">
-                        <h3 class="project-title">Pokedex App</h3>
-                        <p>Objective of this project was to create a UI to display data from an existing API (Pokeapi) using JavaScript. You can search for your favorite Pokemon and see details about it.
-                        </p>
-                        <div class="icon-wrapper">
-                            <div class="project-tech-wrapper">
-
-                                <img class='project-icon' src="img/portfolio img/tech_icons/html_icon.svg" alt="HTML 5 icon">
-                                <img class='project-icon' src="img/portfolio img/tech_icons/css_icon.svg" alt="CSS 3 icon">
-                                <img class='project-icon' src="img/portfolio img/tech_icons/javascript_icon.png" alt="Javascript icon">
-
-                            </div>
-                            <div class="link-icon-wrapper">
-                                <a href="https://github.com/t-schill-dev/pokedex-app" target="_blank">
-                                    <img class='project-icon' src="img/icons/github_bright_icon.svg" alt="link to github repository">
-                                </a>
-                                <a href="img/portfolio img/pokedex-project.jpg" alt='Pokedex project screnshot' target="_blank">
-                                    <img class='project-icon' target="_blank" src="img/icons/image_icon.svg" alt="open screenshot">
-                                </a>
-                                <a href="https://t-schill-dev.github.io/pokedex-app/" target="_blank">
-                                    <img class='project-icon' src="img/icons/share_bright_icon.svg" alt="open live app">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="project-card">
+          <div class="left-box">
+            <img
+              class="project-img"
+              src="img/portfolio img/screenshot_meet_app.jpg"
+              alt="Screenshot meet app"
+            />
+          </div>
+          <div class="right-box text-box">
+            <h2 class="project-title">Meet App</h2>
+            <p class="project-description">
+              This is a serverless, progressive web application (PWA) built with
+              React using a test-driven development (TDD) approach with Jest,
+              cucumber and puppeteer. This means every unit and relation between
+              pages are tested before developed.<br />
+              The application uses AWS Lambda to generate a uniquie token to
+              access the Google Calendar API to fetch upcoming events. For data
+              visualization, the library Recharts displays data dynamically in a
+              pie- and a scatter-chart.
+            </p>
+            <div class="icon-wrapper">
+              <div class="project-tech-wrapper">
+                <img
+                  class="project-icon"
+                  src="img/portfolio img/tech_icons/react_bright_icon.svg"
+                  alt="React icon"
+                />
+                <img
+                  class="project-icon"
+                  src="img/portfolio img/tech_icons/jest_icon.svg"
+                  alt="Jest icon"
+                />
+                <img
+                  class="project-icon"
+                  src="img/portfolio img/tech_icons/cucumber_icon.svg"
+                  alt="Jest cucumber icon"
+                />
+                <img
+                  class="project-icon"
+                  src="img/portfolio img/tech_icons/aws_bright_icon.svg"
+                  alt="AWS icon"
+                />
+              </div>
+              <div class="link-icon-wrapper">
+                <a
+                  href="https://github.com/t-schill-dev/meet-app"
+                  target="_blank"
+                >
+                  <img
+                    class="project-icon"
+                    src="img/icons/github_bright_icon.svg"
+                    alt="link to github repository"
+                  />
+                </a>
+                <a
+                  href="https://t-schill-dev.github.io/meet-app/"
+                  target="_blank"
+                >
+                  <img
+                    class="project-icon"
+                    src="img/icons/share_bright_icon.svg"
+                    alt="open live app"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Further projects -->
+        <section>
+          <h2>Other projects</h2>
+          <div class="other-project-container">
+            <div class="other-project-box">
+              <h3 class="project-title">Chat app</h3>
+              <p>
+                This chat app was developed with React Native and the Gifted
+                Chat library. The app allows create a profile, select color
+                settings, send text, pictures and geo location
+              </p>
+              <div class="icon-wrapper">
+                <div class="project-tech-wrapper">
+                  <img
+                    class="project-icon"
+                    src="img/portfolio img/tech_icons/react_bright_icon.svg"
+                    alt="React native icon"
+                  />
                 </div>
-            </section>
+                <div class="link-icon-wrapper">
+                  <a
+                    href="https://github.com/t-schill-dev/chat-app"
+                    target="_blank"
+                  >
+                    <img
+                      class="project-icon"
+                      src="img/icons/github_bright_icon.svg"
+                      alt="link to github repository"
+                    />
+                  </a>
+                  <a
+                    href="img/portfolio img/Screenshot_chat_app.png"
+                    alt="Pokedex project screnshot"
+                    target="_blank"
+                  >
+                    <img
+                      class="project-icon"
+                      target="_blank"
+                      src="img/icons/image_icon.svg"
+                      alt="open screenshot"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="other-project-box">
+              <h3 class="project-title">Pokedex App</h3>
+              <p>
+                Objective of this project was to create a UI to display data
+                from an existing API (Pokeapi) using JavaScript. You can search
+                for your favorite Pokemon and see details about it.
+              </p>
+              <div class="icon-wrapper">
+                <div class="project-tech-wrapper">
+                  <img
+                    class="project-icon"
+                    src="img/portfolio img/tech_icons/html_icon.svg"
+                    alt="HTML 5 icon"
+                  />
+                  <img
+                    class="project-icon"
+                    src="img/portfolio img/tech_icons/css_icon.svg"
+                    alt="CSS 3 icon"
+                  />
+                  <img
+                    class="project-icon"
+                    src="img/portfolio img/tech_icons/javascript_icon.png"
+                    alt="Javascript icon"
+                  />
+                </div>
+                <div class="link-icon-wrapper">
+                  <a
+                    href="https://github.com/t-schill-dev/pokedex-app"
+                    target="_blank"
+                  >
+                    <img
+                      class="project-icon"
+                      src="img/icons/github_bright_icon.svg"
+                      alt="link to github repository"
+                    />
+                  </a>
+                  <a
+                    href="img/portfolio img/pokedex-project.jpg"
+                    alt="Pokedex project screnshot"
+                    target="_blank"
+                  >
+                    <img
+                      class="project-icon"
+                      target="_blank"
+                      src="img/icons/image_icon.svg"
+                      alt="open screenshot"
+                    />
+                  </a>
+                  <a
+                    href="https://t-schill-dev.github.io/pokedex-app/"
+                    target="_blank"
+                  >
+                    <img
+                      class="project-icon"
+                      src="img/icons/share_bright_icon.svg"
+                      alt="open live app"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
-
-
+      </section>
     </main>
     <footer class="page-footer">
-        <h2>Find me on</h2>
-        <div class="social-media">
-            <a href="https://www.github.com/t-schill-dev" target="_blank">
-                <img class='social-media-icon' src="img/icons/github_bright_icon.svg" alt="GitHub">
-            </a>
-            <a href="https://www.linkedin.com/in/timon-schill/" target="_blank">
-                <img class='social-media-icon' src="img/icons/linkedin_icon.svg" alt="LinkedIn">
-            </a>
-        </div>
+      <h2>Find me on</h2>
+      <div class="social-media">
+        <a href="https://www.github.com/t-schill-dev" target="_blank">
+          <img
+            class="social-media-icon"
+            src="img/icons/github_bright_icon.svg"
+            alt="GitHub"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/timon-schill/" target="_blank">
+          <img
+            class="social-media-icon"
+            src="img/icons/linkedin_icon.svg"
+            alt="LinkedIn"
+          />
+        </a>
+      </div>
     </footer>
-
-
-</body>
-
+  </body>
 </html>
