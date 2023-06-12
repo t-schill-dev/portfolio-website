@@ -1,72 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/icons/favicon-32x32.png" sizes="32x32" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/icons/favicon-32x32.png"
+      sizes="32x32"
+    />
     <script src="js/script.js"></script>
     <!--Reset CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <!--Font Lato-->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <script src="js/script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Portfolio Website</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="page-header">
-            <img class="page-header__item" src="img/icons/logo-icon.svg" alt="logo">
-            <nav class="main-navigation page-header__item">
-                <ul role="menubar" class="navigation-list">
-                    <li class='home-tab' role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-                    </li>
-                    <li class='about-tab' role="presentation">
-                        <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About</a>
-                    </li>
-                    <li class='projects-tab' role="presentation">
-                        <a href="portfolio.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Projects</a>
-                    </li>
-                    <li class='contact-tab' role="presentation">
-                        <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      <div class="page-header">
+        <img
+          class="page-header__item"
+          src="img/icons/logo-icon.svg"
+          alt="logo"
+        />
+        <nav class="main-navigation page-header__item">
+          <ul role="menubar" class="navigation-list">
+            <li class="home-tab" role="presentation">
+              <a
+                href="index.html"
+                role="menuitem"
+                class="navigation-list__item navigation-list__item--active"
+                >Home</a
+              >
+            </li>
+            <li class="about-tab" role="presentation">
+              <a
+                href="about.html"
+                role="menuitem"
+                class="navigation-list__item navigation-list__item--active"
+                >About</a
+              >
+            </li>
+            <li class="projects-tab" role="presentation">
+              <a
+                href="portfolio.html"
+                role="menuitem"
+                class="navigation-list__item navigation-list__item--active"
+                >Projects</a
+              >
+            </li>
+            <li class="contact-tab" role="presentation">
+              <a
+                href="contact.html"
+                role="menuitem"
+                class="navigation-list__item navigation-list__item--active"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
+      <div class="home-page">
         <div class="profile">
-            <img src="img/profile-portrait.png" class="profile__portrait" alt="Portrait of myself">
-            <h1>Hello everyone!</h1>
-            <p>You are interested in me and my work, so let me tell you something about me</p>
+          <div class="introduction">
             <div class="introduction-text">
-
-                <div>
-                    <p>My name is Timon Schill. <br> I am a fullstack<span class="special-font"> < WEB /> </span> developer based in Nuremberg, Germany</p>
-
-                </div>
+              <h1>Hello everyone!</h1>
+              <p>
+                My name is Timon Schill. <br />
+                I am a german fullstack<span class="special-font">
+                  < WEB />
+                </span>
+                developer building web applications for 1 year. My focus is
+                Fronte-End Development with JavaScript frameworks and libraries
+                like React and Angular. I work best in close collaboration with
+                developer and stakeholder to create user-friendly and powerful
+                interfaces.
+              </p>
             </div>
+            <div class="button-group">
+              <div class="button-wrapper">
+                <a href="contact.html" class="button">Contact</a>
+              </div>
+              <button class="button-wrapper">
+                <a
+                  href="files/Timon_Schill_Resume_12-06-2023.pdf"
+                  target="_blank"
+                  class="button"
+                  >Open CV<img
+                    src="img/icons/country-icon/us.svg"
+                    alt="Flag of USA"
+                    title="Open Resume"
+                    class="country-flag"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img
+            src="img/profile-portrait.png"
+            class="profile__portrait"
+            alt="Portrait of myself"
+          />
         </div>
-
+      </div>
     </main>
     <footer class="page-footer">
-        <h2>Find me on</h2>
-        <div class="social-media">
-            <a href="https://www.github.com/t-schill-dev" target="_blank">
-                <img class="social-media-icon" src="img/icons/github_bright_icon.svg" alt="GitHub">
-            </a>
-            <a href="https://www.linkedin.com/in/timon-schill" target="_blank">
-                <img class="social-media-icon" src="img/icons/linkedin_icon.svg" alt="LinkedIn">
-            </a>
-        </div>
+      <h2>Find me on</h2>
+      <div class="social-media">
+        <a href="https://www.github.com/t-schill-dev" target="_blank">
+          <img
+            class="social-media-icon"
+            src="img/icons/github_bright_icon.svg"
+            alt="GitHub"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/timon-schill" target="_blank">
+          <img
+            class="social-media-icon"
+            src="img/icons/linkedin_icon.svg"
+            alt="LinkedIn"
+          />
+        </a>
+      </div>
     </footer>
-
-
-</body>
-
+  </body>
 </html>

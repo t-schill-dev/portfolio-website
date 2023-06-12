@@ -147,23 +147,35 @@ a:active {
 
 /* Global button styling */
 
-.button {
+.button-wrapper{
     box-shadow: 1px 1px 3px 1px #91b8b3;
-    background-color: #151a19;
+    background-color: transparent;
     border-radius: 5px;
     border: 1px solid #566963;
-    display: inline-block;
     cursor: pointer;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 11px 23px;
-    text-decoration: none;
-    text-shadow: 0px -1px 0px #2b665e;
+    margin: 5px;
 }
 
+.button {
+    display: block;
+    color: var(--light-font);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #2b665e;
+    width: 100%;
+    padding: 10px 19px;
+}
+
+.button-wrapper:hover,
 .button:hover {
-    background-color: #384040;
+    background-color: #91b8b3;
+    opacity: 0.8;
+    color: #566963;
+}
+
+.country-flag{
+    margin-left: 5px;
 }
 
 .button:active {
@@ -172,26 +184,47 @@ a:active {
     left: 3px;
 }
 
+/* Styling Home Page
+----------------------------------------------------------------
+ */
+
+ .home-page {
+    display: flex;
+    flex-direction: column;
+ }
+
 .profile {
-    max-width: 700px;
-    margin: 150px auto;
+    display: flex;
+
+    margin: 150px;
 }
 
 .profile__portrait {
-    float: left;
-    width: 250px;
-    margin-right: 40px;
+    width: 350px;
+    margin: 40px;
     border-radius: 50%;
     box-shadow: 4px 2px 5px 0px rgba(51, 51, 51, 0.61);
 }
 
+.introduction {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
 .introduction-text {
-    padding-top: 0px;
+    
 }
 
 .special-font {
     background-color: var(--primary-color);
     font-family: 'Menlo', sans-serif;
+}
+
+.button-group {
+    display: flex;
+    margin: 10px;
+    
 }
 
 .page-footer {
@@ -279,33 +312,6 @@ a:active {
     padding: 2px 5px;
     margin: 10px;
     border-bottom: 1px solid var(--primary-color);
-}
-
-.download-section {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0 1rem 0;
-    text-align: center;
-}
-
-
-/* Flag on download button */
-
-.button-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.download-button {
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 80px;
-}
-
-.download-button>img {
-    padding-right: 5px;
 }
 
 
