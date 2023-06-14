@@ -144,7 +144,33 @@ a:active {
     color: #0d4744;
 }
 
+/**
+PAGE FOOTER
+------------------------------------------------------------------
+*/
 
+.page-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height:15vh;
+    margin-top: 50px;
+}
+
+.social-media {
+    flex-direction: row;
+}
+
+.page-footer a {
+    text-decoration: none;
+}
+
+.social-media-icon {
+    height: 25px;
+    width: 25px;
+}
 /* Global button styling */
 
 .button-wrapper{
@@ -212,10 +238,6 @@ a:active {
     width: 50%;
 }
 
-.introduction-text {
-    
-}
-
 .special-font {
     background-color: var(--primary-color);
     font-family: 'Menlo', sans-serif;
@@ -225,22 +247,6 @@ a:active {
     display: flex;
     margin: 10px;
     
-}
-
-.page-footer {
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.page-footer a {
-    text-decoration: none;
-}
-
-.social-media-icon {
-    height: 25px;
-    width: 25px;
 }
 
 
@@ -466,7 +472,15 @@ hr {
 
 /* ! Contact form Out of use */
 
+/* 
+Privacy page
+---------------------------------------------
+*/
 
+.privacy-page{
+    display: block;
+    margin: 0 10px 0 10px;
+}
 /* 
 
 .contact-input {
