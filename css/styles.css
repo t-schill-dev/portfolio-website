@@ -150,6 +150,8 @@ PAGE FOOTER
 */
 
 .page-footer {
+    position: absolute;
+    bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,7 +223,6 @@ PAGE FOOTER
 
 .profile {
     display: flex;
-
     margin: 150px;
 }
 
@@ -537,6 +538,26 @@ input {
     }
     .navigation-list__item {
         font-size: 70%;
+    }
+    .page-footer{
+        position: relative;
+
+    }
+    .profile,
+    .introduction,
+    .profile__portrait{
+        align-items: center;
+    }
+    .home-page {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .introduction {
+        width: 80vw;  
+    }
+    .profile {
+        margin-bottom: 5px;
     }
     /* Contact page styling */
     .contact-input {
