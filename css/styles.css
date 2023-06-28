@@ -94,7 +94,7 @@ li {
   .menu__btn {
     display: flex;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
   
@@ -165,7 +165,7 @@ PAGE FOOTER
 */
 
 .page-footer {
-    position: absolute;
+    position: relative;
     bottom: 10px;
     display: flex;
     flex-direction: column;
