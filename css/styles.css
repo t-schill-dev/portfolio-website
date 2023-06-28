@@ -39,9 +39,6 @@ a {
     color: var(--primary-color);
     padding: 3px;
 }
-a:active {
-    color: #0d4744;
-}
 
 a:visited {
     color: var(--primary-color);
