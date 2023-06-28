@@ -9,6 +9,7 @@
     --dark-font: #151a19;
     --reg-font-size: 16px;
     --bigger-text: 20px;
+    --header-color: #F0EBE3;
 }
 
 * {
@@ -49,101 +50,112 @@ li {
 .page-header {
     display: flex;
     width: 100vw;
-    align-items: center;
-    justify-content: space-between;
+    height: 4,25rem;
     padding-right: 10px;
     box-shadow: 0 2px 4px 0px rgba(51, 51, 51, 0.61);
-    background-color: #F0EBE3;
+    background-color: var(--header-color);
 }
 
-
-/* Allow items  to not grow but shrink */
-
-.page-header__item {
-    flex: 0 1 100px;
+.logo{
+    margin-left: 15px;
 }
 
-
-/* Only navigation bar should grow*/
-
-.page-header__item:last-child {
-    flex-grow: 1;
-    text-align: right;
-}
-
-
-/* target the nav list and the items by "li"*/
-
-.navigation-list li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 0px 5px;
-    font-size: var(--bigger-text);
-    font-weight: var(--font-weight);
-}
-
-.navigation-list__item {
-    position: relative;
-}
-
-
-/* Javascript adds class to items when selected */
-
-.current {
-    border-bottom: 2px solid var(--primary-color);
-}
-
-
-/*hover effect menubar */
-
-.navigation-list li a::before,
-.navigation-list li a::after {
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background-color: var(--dark-grey);
-    content: "";
+/* HAMBURGER */
+#menu__toggle {
     opacity: 0;
-    transition: all 0.3s;
-}
-
-.navigation-list li a::before {
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+  }
+  
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  
+    width: 2.5em;
+    height: 2em;
+  
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+  
+    width: 100%;
+    height: 3px;
+  
+    background-color: #616161;
+  
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
     top: 0px;
-    transform: translateY(-10px);
-}
+    right: -100%;
+    width: 200px;
+    height: auto;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: var(--header-color);
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 
-.navigation-list li a::after {
-    bottom: 0px;
-    transform: translateY(10px);
-}
+    transition-duration: .25s;
+  }
+  
+  .menu__item {
+    display: block;
+    padding: 12px 24px;  
+    font-size: 1.5em;
+    font-weight: 600;
+  
+    text-decoration: none;
+  
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
 
-.navigation-list li a:hover::before,
-.navigation-list li a:hover::after {
-    opacity: 1;
-    transform: translateY(0px);
-}
-
-a {
-    color: var(--primary-color);
-    padding: 3px;
+a:active {
+    color: #0d4744;
 }
 
 a:visited {
     color: var(--primary-color);
     opacity: 0.5;
 }
-
-a:hover,
-a:focus {
-    /* No underline when hovering */
-    text-decoration: none;
-}
-
-a:active {
-    color: #0d4744;
-}
-
 /**
 PAGE FOOTER
 ------------------------------------------------------------------
@@ -532,13 +544,6 @@ input {
         visibility: hidden;
         position: absolute;
     }
-    .page-header__item:last-child {
-        text-align: center;
-        justify-content: space-evenly;
-    }
-    .navigation-list__item {
-        font-size: 70%;
-    }
     .page-footer{
         position: relative;
 
@@ -631,23 +636,9 @@ input {
     }
 }
 
-
-/* @media all and (min-width: 500px) and (max-width: 850px) {
-    .navigation-list__item {
-        font-size: 90%;
-    }
-} */
-
 @media all and (min-width: 850px) and (max-width: 1500px) {
     h1 {
         font-size: 30px;
-    }
-    .page-header {
-        width: 100vw;
-        padding-right: 3px
-    }
-    .page-header__item:last-child {
-        flex: 1;
     }
     .self-intro,
     .professional-intro {
@@ -669,10 +660,7 @@ input {
         max-height: 600px;
         object-fit: contain;
     }
-    /* .self-intro,
-    .professional-intro {
-        width: 50%;
-    } */
+  
     /* Portfolio page */
     .project-img {
         object-fit: fill;
@@ -691,4 +679,37 @@ input {
         width: 70%;
         min-height: 380px;
     }
+}
+
+@media all and (min-width: 350px) and (max-width: 850px) {
+    .page-header {
+        background-color: inherit;
+        box-shadow: none;
+    } 
+    .menu__btn {
+        width: 2.5em;
+        height: 2.5em;
+        cursor: pointer;
+        z-index: 1;
+      }
+      
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        background-color: var(--header-color);
+      }
+     
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+        background-color: var(--background-color);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+        background-color: var(--background-color);
+      }
+      .profile {
+        margin: 30px;
+      }
 }
