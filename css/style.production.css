@@ -44,6 +44,16 @@ h3 {
 
 a {
     text-decoration: none;
+    color: var(--primary-color);
+    padding: 3px;
+}
+a:active {
+    color: #0d4744;
+}
+
+a:visited {
+    color: var(--primary-color);
+    opacity: 0.5;
 }
 
 ul {
@@ -182,14 +192,7 @@ li {
     background-color: #CFD8DC;
   }
 
-a:active {
-    color: #0d4744;
-}
 
-a:visited {
-    color: var(--primary-color);
-    opacity: 0.5;
-}
 /**
 PAGE FOOTER
 ------------------------------------------------------------------
